@@ -28,7 +28,7 @@ This currently only includes, in the case of SPI operation:
 
 In the case of parallel chipset operation `glcd_parallel_write(uint8_t c)` is used instead of ` glcd_spi_write(uint8_t c)`.
 
-For chipsets that may not need ay of the functions above, you'll still need to define the function in your code, even if you just leave it blank.
+For chipsets that may not need any of the functions above, you'll still need to define the function in your code, even if you just leave it blank.
 
 The corresponding `devices/mydevice.h` should be used as well to store all required constants. Try and avoid using "magic numbers" in the code. This header file should also be used to store port and pin information for the implementation.
 
