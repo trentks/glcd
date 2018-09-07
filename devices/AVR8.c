@@ -60,8 +60,7 @@ void glcd_init(void)
 	sbi(DDR(CONTROLLER_SS_PORT),CONTROLLER_SS_PIN);
 	sbi(DDR(CONTROLLER_SCK_PORT),CONTROLLER_SCK_PIN);
 		
-	/* Set SS, DC and RST pins to output */
-	sbi( DDR(CONTROLLER_SS_PORT), CONTROLLER_SS_PIN );
+	/* Set DC and RST pins to output */
 	sbi( DDR(CONTROLLER_DC_PORT), CONTROLLER_DC_PIN );
 	sbi( DDR(CONTROLLER_RST_PORT), CONTROLLER_RST_PIN );
 	
